@@ -26,7 +26,8 @@ incPoints.forEach((btn) => {
   //has to be written the old way -> function ()
   //can be used in a form/ choosing among a list 
   btn.addEventListener('click', function() {
-    this.style.backgroundColor = 'teal';
+    this.style.backgroundColor = 'gray';
+    this.style.textColor = 'white';
     
   });
 });
@@ -35,6 +36,6 @@ incPoints.forEach((btn) => {
 
 function pointChecker() {
   if (points >= numItems) {
-    showPoints.textContent = 'You clicked all the buttons!';
+    showPoints.textContent = 'You want to go everywhere!';
   }
 }
